@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bra Khiso Electronic Store</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+    <body>
+
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></a></li>
+                    <li><a href="">Contact</a></a></li>
+                    <li><a href="product.html">Product</a></a></li>
+                    <li><a href="about.html">About</a></a></li>
+                    
+                </ul>
+            </nav>
+            <img src="img/cart.png" width="30px" height="30px">
+            <img src="img/menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+           
+        </div>
+        
+    </div>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/buy1.jpg" width="100%" >
+            </div>
+            <div class="col-2">
+                <p>Home </p>
+                <h1>Sumsang Z Flip</h1>
+                <h4>R8,499</h4>
+                <select>
+                    <option>select color</option>
+                    <option>Black</option>
+                    <option>Grey</option>
+                    <option>Pink</option>
+                    <option>Blue</option>
+                </select>
+                <input type="number" value="1">
+                <a href="contact.html" class="btn">add to cart</a>
+                <h3>Product Information <span class="fa fa-indent"></span></h3>
+                <br>
+                <p> come with free bag, Fingerprint Reader and 3 Year warrent</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tittle">
+        <h1>Related Items</h1>
+    <div class="col-4">
+        <img src="img/all6.jpg" >
+        <h4>TELEFUNKEN 32GB</h4>
+        <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <p>R1 299.00</p>
+        
+    
+    </div>
+    <div class="col-4">
+        <img src="img/all7.jpg" >
+        <h4>Lenovo Tab 7</h4>
+        <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star-half-o "></span>
+        </div>
+        <p>R6000.00</p>
+        
+    
+   
+    <div class="col-4">
+        <img src="img/all8.jpg" >
+        <h4>Sumsang Tab 8</h4>
+        <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star-half-o "></span>
+        </div>
+        <p>R8000.00</p>
+        
+    
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px"
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px"
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bra Khiso Electronic Store</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+    <body>
+
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></a></li>
+                    <li><a href="">Contact</a></a></li>
+                    <li><a href="product.html">Product</a></a></li>
+                    <li><a href="about.html">About</a></a></li>
+                   
+                </ul>
+            </nav>
+            <img src="img/cart.png" width="30px" height="30px">
+            <img src="img/menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+           
+        </div>
+        
+    </div>
+   <div class="small-container cart-page">
+       <table class="tables">
+           <tr>
+               <th>Product</th>
+               <th>Quality</th>
+               <th>Subtotal</th>
+           </tr>
+           <tr>
+               <div class="cart-info">
+                   <img src="img/buy2.jpg">
+                   <div>
+                       <p>Sumsang Z Flip 4 </p>
+                       <small>R8,500</small>
+                       <a href="" class="btn">Remove</a>
+                   </div>
+               </div>
+               <td>Z Flip</td>
+               <td><input type="number" value="1"> </td>
+               <td>R8,499</td>
+           </tr>
+           <tr>
+            <div class="cart-info">
+                <img src="img/all1.jpg">
+                <div>
+                    <p>HP laptop </p>
+                    <small>R8,500</small>
+                    <a href="" class="btn">Remove</a>
+                </div>
+            </div>
+            <td>HP</td>
+            <td><input type="number" value="1"> </td>
+            <td>R8,500</td>
+           </tr>
+       </table>
+   </div>
+    
+    
+    </div>
+    
+</div>
+
+</div>
+</div>
+<div class="total-price">
+    <table>
+        <tr>
+        <td>Subtotal</td>
+        <td>R16 999</td>
+    </tr>
+    <tr>
+        <td>VAT</td>
+        <td>R300</td>
+    </tr>
+    <tr>
+        <td>total price</td>
+        <td>R17 200</td>
+    </tr>
+    </table>
+</div>
+
+</div>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px"
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px"
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>
